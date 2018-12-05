@@ -1,0 +1,12 @@
+package.xdc
+package.xs
+package/xconfig_task.sch
+package/.vers_g200
+package/.vers_r200
+package/.vers_b200
+package/.xdc-E05
+package/xconfig_task.java
+package/xconfig_task.class
+package/package_xconfig_task.c
+package/package.defs.h
+package/xconfig_task.ccs

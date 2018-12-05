@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="configPkg" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/task_p28L.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="C:/Users/peima/Documents/01- School/02-Term 7/02-Real-Time/03-Labs/task_WonBot/task.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/task_p28L.mak" src="package.bld"/>
+        <srcFile name="package/cfg/task_p28L.o28L.dep" src="package/cfg/task_p28L.c"/>
+        <srcFile name="package/cfg/task_p28L.dep" src="package/cfg/task_p28L.cfg"/>
+        <srcFile name="package/cfg/task.x28L.mak" src="package.bld"/>
+        <srcFile name="package/rel/configPkg.tar.dep" src="package/rel/configPkg.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.C28_large"
+            version="ti.targets.C28_large{1,0,18.1,2"
+            rawVersion="18.1.2"
+            platform="ti.platforms.sim28xx"
+            isa="28"
+            suffix="28L"
+            rootDir="C:/TI/ccsv8/tools/compiler/ti-cgt-c2000_18.1.2.LTS"
+            os="undefined"
+            rts="ti.targets.rts2800">
+            <model endian="little"
+                codeModel="undefined"
+                dataModel="large"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="task"
+        pname="task.p28L"
+        target="ti.targets.C28_large"
+        platform="ti.platforms.tms320x28:TMS320F28027"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/task_p28L.cfg"
+        xCfgPrefix="package/cfg/task_p28L"
+        cfgScript="C:/Users/peima/Documents/01- School/02-Term 7/02-Real-Time/03-Labs/task_WonBot/task.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="task"
+        pname="task.x28L"
+        target="ti.targets.C28_large"
+        platform="ti.platforms.tms320x28:TMS320F28027"
+        profile="release"
+        xCfgScript="package/cfg/task_p28L.cfg"
+        xCfgPrefix="package/cfg/task_p28L"
+        cfgScript="C:/Users/peima/Documents/01- School/02-Term 7/02-Real-Time/03-Labs/task_WonBot/task.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="task.x28L"
+        args=""
+        groupName="task.x28L"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="configPkg"
+        pname="configPkg.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>
